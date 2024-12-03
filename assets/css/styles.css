@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background-color: #003366 !important; /* Añade !important temporalmente */
+  color: white; /* Establece color de texto blanco */
+  padding: 10px 0; /* Añade algo de padding vertical */
+}
+
+/* Reset de estilos predeterminados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Si estás usando Bootstrap u otro framework */
+.navbar-default, 
+.navbar-header {
+  background-color: #003366 !important;
+}
+
+/* Añadir un margen superior al contenido para que no quede cubierto por el navbar fijo */
+body {
+  padding-top: 80px; /* Ajusta el valor según la altura de tu navbar */
+}
+
+/* Asegura que el carousel no se superponga con el navbar */
+.carousel {
+  padding-top: 50px; /* Ajusta este valor si el navbar tiene más altura */
+}
+
+
+:root {
+  --color-primary: #003366;
+  --bg-black: #000;
+}
+
+/* Utilidades */
+.color-first {
+  background-color: var(--color-primary);
+}
+.bg-black {
+  background-color: var(--bg-black);
+}
+hr.border-first {
+  background-color: var(--color-primary);
+}
+/* Header */
+@media screen and (max-width: 380px) {
+  .text-logo {
+    font-size: 28px;
+  }
+}
+.img-first,
+.img-second,
+.img-third {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.img-first, .img-second, .img-third {
+  background-image: url(../img/Escribe.png);
+  background-size: 500px auto; /* Ajusta la imagen para que se ajuste dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+}
+
+
+
+
